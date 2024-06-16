@@ -1,0 +1,21 @@
+<?php
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $nilai=$_POST['nilai'];
+if($nilai>=91){
+    $nilaihuruf='A';
+}
+elseif($nilai>=81){
+    $nilaihuruf='B';
+}
+elseif($nilai>=71){
+    $nilaihuruf='C';
+}
+elseif($nilai>=61){
+    $nilaihuruf='D';
+}
+else{
+    $nilaihuruf='E';
+}
+echo "Nilai anda $nilai, anda mendapatkan $nilaihuruf.";
+}
+?>
